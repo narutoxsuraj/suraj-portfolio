@@ -1,0 +1,26 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#08090b;--card:#101216;--text:#f4f5f7;--muted:#9a9da5;--line:#252830;--accent:#7c5cff;--accent2:#a58fff}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.navbar{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:auto;padding:0 24px;position:sticky;top:0;background:rgba(8,9,11,.86);backdrop-filter:blur(14px);z-index:10;border-bottom:1px solid rgba(255,255,255,.04)}
+.logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span,.hero h1 span,h2 span{color:var(--accent)}
+.navbar nav{display:flex;gap:28px}.navbar nav a{color:#b9bbc2;font-size:14px}.navbar nav a:hover{color:#fff}
+.menu-btn{display:none;background:none;border:0;color:#fff;font-size:25px}
+.hero{min-height:calc(100vh - 72px);max-width:1120px;margin:auto;padding:100px 24px;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.eyebrow,.section-label{font-size:12px;letter-spacing:2px;color:var(--accent2);font-weight:800}
+.hero h1{font-size:clamp(48px,7vw,82px);line-height:1.02;letter-spacing:-4px;margin:18px 0}
+.hero-text{max-width:650px;color:var(--muted);font-size:18px}
+.buttons{display:flex;gap:14px;margin-top:32px}.btn{padding:12px 20px;border-radius:10px;font-weight:700;font-size:14px}.primary{background:var(--accent);color:#fff}.secondary{border:1px solid var(--line);color:#ddd}
+.hero-card{display:flex;justify-content:center}.code-window{width:100%;max-width:450px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 25px 80px rgba(0,0,0,.35);overflow:hidden;transform:rotate(2deg)}
+.dots{display:flex;gap:7px;padding:16px;border-bottom:1px solid var(--line)}.dots i{width:9px;height:9px;border-radius:50%;background:#444}
+pre{padding:28px 24px;overflow:auto;color:#c9c4ff;font-size:14px}
+.section{max-width:1120px;margin:auto;padding:110px 24px}.section h2{font-size:clamp(34px,5vw,55px);line-height:1.1;letter-spacing:-2px;margin:14px 0 42px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.about-grid>p{color:var(--muted);font-size:18px;max-width:600px}
+.info-card,.project{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}.info-card strong{font-size:18px}.info-card p{margin-top:12px}.info-card small{color:var(--muted)}
+.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-align:center;font-weight:700;color:#d9dae0}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{min-height:300px;display:flex;flex-direction:column}.project-number{color:var(--accent2);font-size:12px;font-weight:800}.project h3{font-size:22px;margin:20px 0 10px}.project p{color:var(--muted);font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0}.tags span{font-size:11px;border:1px solid var(--line);padding:5px 8px;border-radius:20px;color:#bfc1c8}.project a{margin-top:auto;color:var(--accent2);font-size:13px;font-weight:800}.project-note{color:#777b84;text-align:center;margin-top:25px;font-size:13px}
+.contact{border-top:1px solid var(--line)}.contact>p:not(.section-label){color:var(--muted)}.contact-links{display:flex;gap:24px;flex-wrap:wrap;margin-top:25px}.contact-links a{font-weight:700;color:#ddd}.contact-links a:hover{color:var(--accent2)}
+footer{border-top:1px solid var(--line);text-align:center;padding:30px 20px;color:#686c75;font-size:12px}
+@media(max-width:800px){.navbar nav{display:none}.menu-btn{display:block}.navbar.menu-open nav{display:flex;position:absolute;top:72px;left:0;right:0;background:#0b0c0f;border-bottom:1px solid var(--line);padding:20px 24px;flex-direction:column;gap:16px}.hero{grid-template-columns:1fr;padding-top:75px;gap:45px}.hero h1{letter-spacing:-2px}.hero-card{order:-1}.code-window{transform:none}.about-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr}.section{padding:80px 24px}}
+@media(max-width:430px){.hero h1{font-size:45px}.hero-text{font-size:16px}.buttons{flex-direction:column}.btn{text-align:center}}
