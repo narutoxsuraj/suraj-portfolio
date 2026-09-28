@@ -1,19 +1,20 @@
-# Suraj Kumar — Developer Portfolio
+# Suraj Kumar — Naruto | Developer Portfolio
 
-Personal portfolio website built with HTML, CSS and JavaScript.
+A personal developer portfolio for **Suraj Kumar**, also known as **Naruto**.
 
-## Features
-- Responsive design
-- Mobile navigation
-- Projects section
-- Skills section
-- Contact links
-- GitHub and LinkedIn links
+## Built With
+- HTML
+- CSS
+- JavaScript
 
-## Technologies
-HTML • CSS • JavaScript
+## Sections
+- About
+- Skills
+- Projects
+- Contact
+
+## GitHub
+https://github.com/narutoxsuraj
 
 ## Live Demo
-After enabling GitHub Pages, the site will be available at:
-
-`https://narutoxsuraj.github.io/suraj-portfolio/`
+https://narutoxsuraj.github.io/suraj-portfolio/
